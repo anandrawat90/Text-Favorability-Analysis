@@ -113,8 +113,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# csv files
+# data files
 .csv
+.txt
 
-# xml
+# pycharm files
 .xml
+.idea/
