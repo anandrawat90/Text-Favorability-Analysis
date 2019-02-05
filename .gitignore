@@ -116,7 +116,14 @@ dmypy.json
 # data files
 *.csv
 *.txt
+*.pkl
 
 # pycharm files
 *.xml
 .idea/
+
+# images
+*.png
+
+# jupyter notebook
+.ipynb_checkpoints/
