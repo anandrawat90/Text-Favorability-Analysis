@@ -115,3 +115,6 @@ dmypy.json
 
 # csv files
 .csv
+
+# xml
+.xml
