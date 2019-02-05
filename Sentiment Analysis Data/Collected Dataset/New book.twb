@@ -1,0 +1,656 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0210.2209                               -->
+<workbook original-version='10.5' source-build='10.5.1 (10500.18.0210.2209)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='WorldCupDraw Preprocessed Dataset wo Dups' inline='true' name='federated.0larmpb0ebk83a1d4t6cy1aw06kb' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WorldCupDraw Preprocessed Dataset wo Dups' name='textscan.173x8u70h8n0e70zmq8871phzawx'>
+            <connection class='textscan' directory='C:/Users/anand/Projects/Masters Project/Source Code/Sentiment Analysis Data/Collected Dataset' filename='WorldCupDraw Preprocessed Dataset wo Dups.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.173x8u70h8n0e70zmq8871phzawx' name='WorldCupDraw Preprocessed Dataset wo Dups.csv' table='[WorldCupDraw Preprocessed Dataset wo Dups#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='text' ordinal='1' />
+            <column datatype='string' name='screen_name' ordinal='2' />
+            <column datatype='integer' name='retweet_count' ordinal='3' />
+            <column datatype='integer' name='favorite_count' ordinal='4' />
+            <column datatype='integer' name='friends_count' ordinal='5' />
+            <column datatype='integer' name='followers_count' ordinal='6' />
+            <column datatype='string' name='url' ordinal='7' />
+            <column datatype='boolean' name='RT' ordinal='8' />
+            <column datatype='string' name='original_tweeter' ordinal='9' />
+            <column datatype='string' name='emojis_used' ordinal='10' />
+            <column datatype='integer' name='reply_count' ordinal='11' />
+            <column datatype='real' name='avg_reply_retweet' ordinal='12' />
+            <column datatype='real' name='avg_reply_fav' ordinal='13' />
+            <column datatype='integer' name='num_positive_replies' ordinal='14' />
+            <column datatype='integer' name='num_negative_replies' ordinal='15' />
+            <column datatype='real' name='positive_percentage' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>screen_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[screen_name]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>screen_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retweet_count]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>retweet_count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>favorite_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[favorite_count]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>favorite_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>friends_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[friends_count]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>friends_count</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>followers_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[followers_count]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>followers_count</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RT</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[RT]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>RT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_tweeter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[original_tweeter]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>original_tweeter</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emojis_used</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emojis_used]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>emojis_used</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reply_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reply_count]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>reply_count</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_reply_retweet</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_reply_retweet]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>avg_reply_retweet</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_reply_fav</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_reply_fav]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>avg_reply_fav</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_positive_replies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_positive_replies]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>num_positive_replies</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_negative_replies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_negative_replies]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>num_negative_replies</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positive_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[positive_percentage]</local-name>
+            <parent-name>[WorldCupDraw Preprocessed Dataset wo Dups.csv]</parent-name>
+            <remote-alias>positive_percentage</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Avg Reply Fav' datatype='real' name='[avg_reply_fav]' role='measure' type='quantitative' />
+      <column caption='Avg Reply Retweet' datatype='real' name='[avg_reply_retweet]' role='measure' type='quantitative' />
+      <column caption='Emojis Used' datatype='string' name='[emojis_used]' role='dimension' type='nominal' />
+      <column caption='Favorite Count' datatype='integer' name='[favorite_count]' role='measure' type='quantitative' />
+      <column caption='Followers Count' datatype='integer' name='[followers_count]' role='measure' type='quantitative' />
+      <column caption='Friends Count' datatype='integer' name='[friends_count]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Num Negative Replies' datatype='integer' name='[num_negative_replies]' role='measure' type='quantitative' />
+      <column caption='Num Positive Replies' datatype='integer' name='[num_positive_replies]' role='measure' type='quantitative' />
+      <column caption='Original Tweeter' datatype='string' name='[original_tweeter]' role='dimension' type='nominal' />
+      <column caption='Positive Percentage' datatype='real' name='[positive_percentage]' role='measure' type='quantitative' />
+      <column caption='Reply Count' datatype='integer' name='[reply_count]' role='measure' type='quantitative' />
+      <column caption='Retweet Count' datatype='integer' name='[retweet_count]' role='measure' type='quantitative' />
+      <column caption='Screen Name' datatype='string' name='[screen_name]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/anand/Projects/Masters Project/Source Code/Sentiment Analysis Data/Collected Dataset/WorldCupDraw Preprocessed Dataset wo Dups.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/27/2018 12:13:44 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='77274' timestamp-start='2018-03-27 00:13:44.429' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77274</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>1</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>313</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>screen_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[screen_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>screen_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36703</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retweet_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retweet_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retweet_count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>291</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>favorite_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[favorite_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>favorite_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>friends_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[friends_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>friends_count</remote-alias>
+              <ordinal>5</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1322</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>followers_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[followers_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>followers_count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1357</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>7</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>319</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RT</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[RT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RT</remote-alias>
+              <ordinal>8</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>original_tweeter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[original_tweeter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>original_tweeter</remote-alias>
+              <ordinal>9</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>148</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emojis_used</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[emojis_used]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emojis_used</remote-alias>
+              <ordinal>10</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reply_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reply_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reply_count</remote-alias>
+              <ordinal>11</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_reply_retweet</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_reply_retweet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_reply_retweet</remote-alias>
+              <ordinal>12</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_reply_fav</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_reply_fav]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_reply_fav</remote-alias>
+              <ordinal>13</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>196</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_positive_replies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_positive_replies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_positive_replies</remote-alias>
+              <ordinal>14</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_negative_replies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_negative_replies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_negative_replies</remote-alias>
+              <ordinal>15</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>positive_percentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[positive_percentage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>positive_percentage</remote-alias>
+              <ordinal>16</ordinal>
+              <family>WorldCupDraw Preprocessed Dataset wo Dups.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.438424' measure-ordering='alphabetic' measure-percentage='0.561576' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Top 10 most replied tweets'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='WorldCupDraw Preprocessed Dataset wo Dups' name='federated.0larmpb0ebk83a1d4t6cy1aw06kb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0larmpb0ebk83a1d4t6cy1aw06kb'>
+            <column-instance column='[reply_count]' derivation='Max' name='[max:reply_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[text]' derivation='None' name='[none:text:nk]' pivot='key' type='nominal' />
+            <column caption='Reply Count' datatype='integer' name='[reply_count]' role='measure' type='quantitative' />
+            <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[none:text:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='MAX([reply_count])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:text:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[none:text:nk]' direction='DESC' using='[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[max:reply_count:qk]' />
+          <slices>
+            <column>[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[none:text:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[max:reply_count:qk]</rows>
+        <cols>[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[none:text:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Top 10 most replied tweets'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0larmpb0ebk83a1d4t6cy1aw06kb].[none:text:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Top 10 most replied tweets' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
